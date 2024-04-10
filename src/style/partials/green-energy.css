@@ -1,0 +1,92 @@
+.green-energy {
+	background-color: var(--dark-green);
+	padding-bottom: 158px;
+}
+.green-energy__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.green-energy__caption {
+	z-index: -1;
+	margin-bottom: clamp(12px, 1.6vw, 24px);
+}
+.caption-green-energy {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.caption-green-energy__icon {
+	width: 12px;
+	height: 12px;
+	background-color: var(--light-green);
+	position: relative;
+	border-radius: 2px;
+}
+.caption-green-energy__icon::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	aspect-ratio: 1 / 1;
+	background-color: var(--dark-green);
+	border-radius: 50%;
+}
+.caption-green-energy__text {
+	font-size: 0.875rem;
+}
+.green-energy__title {
+	color: var(--secondary-color);
+	margin-bottom: clamp(16px, 2.2vw, 32px);
+	text-align: center;
+}
+.green-energy__text {
+	margin-bottom: clamp(24px, 2.7vw, 40px);
+	font-size: var(--body-fs);
+	text-align: center;
+	line-height: 1.5;
+}
+.green-energy__title,
+.green-energy__text {
+	max-width: 592px;
+}
+.green-energy__buttons {
+	display: flex;
+	gap: 16px;
+}
+
+@media (max-width: 911px) {
+	.green-energy__text,
+	.green-energy__title {
+		max-width: 492px;
+	}
+}
+
+@media (max-width: 768px) {
+	.green-energy__buttons button {
+		padding: 16px 16px;
+	}
+}
+
+@media (max-width: 717px) {
+	.green-energy__text,
+	.green-energy__title {
+		max-width: 392px;
+	}
+}
+
+@media (max-width: 523px) {
+	.green-energy__text,
+	.green-energy__title {
+		max-width: 292px;
+	}
+}
+
+@media (max-width: 328px) {
+	.green-energy__title {
+		max-width: 250px;
+	}
+}

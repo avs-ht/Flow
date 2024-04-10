@@ -1,0 +1,51 @@
+@import 'null.css';
+@import 'vars.css';
+
+body {
+	background-color: var(--background-color);
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	color: var(--secondary-color);
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primary-color);
+}
+
+h1 {
+	font-size: var(--fsh1);
+}
+h2 {
+	font-size: var(--fsh2);
+}
+h3 {
+	font-size: var(--fsh3);
+}
+h4 {
+	font-size: var(--fsh4);
+}
+h5 {
+	font-size: var(--fsh5);
+}
+h6 {
+	font-size: var(--fsh6);
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+[class*='__container'] {
+	max-width: calc(var(--width-container) + var(--inline-padding-container) * 2);
+	margin: 0 auto;
+	padding: 0 var(--inline-padding-container);
+}

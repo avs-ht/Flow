@@ -1,0 +1,10 @@
+@import 'src/style/tech/index.css';
+@import 'src/style/unique/index.css';
+@import 'src/style/components/index.css';
+@import 'src/style/partials/index.css';
+
+.dark-bg {
+	background-color: var(--dark-green);
+	display: flex;
+	flex-direction: column;
+}

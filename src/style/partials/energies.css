@@ -1,0 +1,93 @@
+.energies {
+	padding-block: clamp(40px, 7.2vw, 104px);
+	background: url('../../static/sunPanels.png') no-repeat;
+	background-position: 85%;
+	background-size: min(496px, 34.4vw) min(46.3vw, 669px);
+}
+.energies__boundaries {
+	max-width: 500px;
+}
+.energies__main-title {
+	font-size: clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
+	margin-bottom: clamp(40px, 6.1vw, 88px);
+}
+.energies__list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.energies__container {
+	position: relative;
+}
+.energies__title {
+	font-size: clamp(1.5rem, 1.5vw + 1.2rem, 3rem);
+	color: var(--contrast-color);
+	transition: var(--transition);
+}
+.energies__item {
+	cursor: pointer;
+	position: relative;
+}
+.energies__item.active {
+	cursor: default;
+}
+.energies__button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+.energies__item.active .energies__button {
+	display: none;
+}
+.energies__item:hover .energies__title {
+	color: var(--primary-color);
+}
+.energies__item.active .energies__title {
+	color: var(--primary-color);
+	padding-bottom: 16px;
+}
+
+.energies__text {
+	margin-bottom: clamp(8px, 1.1vw, 16px);
+}
+.energies__link {
+	color: #022c22 !important;
+	font-weight: 500;
+}
+
+.energies__desc {
+	max-width: max(300px, 50%);
+	color: var(--contrast-color);
+	font-size: var(--body-fs);
+	line-height: 1.1;
+	transition: 0.5s;
+	max-height: 0;
+	overflow: hidden;
+}
+.energies__item.active .energies__desc {
+	transition: 1s ease-in-out;
+	max-height: 1000px;
+}
+
+@media (max-width: 625px) {
+	.energies {
+		background: transparent;
+	}
+	.energies__boundaries {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.energies__main-title {
+		text-align: center;
+	}
+	.energies__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}

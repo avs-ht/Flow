@@ -1,0 +1,41 @@
+.partners {
+	overflow: hidden;
+	padding-bottom: clamp(30px, 4.4vw, 64px);
+}
+.partners__container {
+	max-width: 100%;
+	padding: 0;
+}
+.partners__title {
+	text-align: center;
+	color: var(--secondary-color);
+	margin-bottom: clamp(30px, 4.4vw, 64px);
+}
+.partners__ribbon {
+	white-space: nowrap;
+}
+.partners__ribbon:hover .ribbon {
+	animation-play-state: paused;
+}
+.ribbon {
+	display: inline-flex;
+	animation: 15s slide infinite linear;
+}
+.ribbon__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 84px;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.24);
+	margin: 0 8px;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}

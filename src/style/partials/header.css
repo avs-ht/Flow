@@ -1,0 +1,133 @@
+.header {
+	padding-block: 32px 108px;
+	background-color: var(--dark-green);
+	--nav-gap: 32px;
+}
+
+.burger {
+	z-index: 9999;
+	display: none;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+}
+
+.burger__bar {
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--secondary-color);
+	transition: var(--transition) ease-in-out;
+}
+
+.burger:hover .burger__bar {
+	background-color: var(--light-green);
+}
+
+.burger__bar:nth-of-type(2) {
+	top: calc(50% - 9px);
+}
+.burger__bar:nth-of-type(3) {
+	top: calc(50% + 9px);
+}
+.burger.active .burger__bar {
+	&:nth-of-type(1) {
+		opacity: 0;
+	}
+	&:nth-of-type(2) {
+		top: 50%;
+		transform: translate(-50%, 0%) rotate(45deg);
+	}
+	&:nth-of-type(3) {
+		top: 50%;
+		transform: translate(-50%, 0%) rotate(-45deg);
+	}
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+.header__logo span {
+	font-size: var(--fsh3);
+	font-weight: 500;
+}
+
+.header__nav-container {
+	z-index: 9998;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--backdrop);
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	padding-left: clamp(20px, 4.5vw, 40px);
+}
+.header__list {
+	width: 100%;
+	display: flex;
+	gap: var(--nav-gap);
+}
+
+.header__link {
+	color: var(--secondary-color);
+	white-space: nowrap;
+	font-weight: 500;
+	transition: var(--transition);
+}
+
+.header__link:hover {
+	color: var(--light-green);
+}
+
+@media (max-width: 768px) {
+	.header__nav-container {
+		display: none;
+	}
+	.header__left {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	.header__burger {
+		display: flex;
+	}
+	.header__nav {
+		background-color: var(--dark-green);
+		width: max-content;
+		height: 100vh;
+
+		font-size: 2rem;
+		align-items: flex-start;
+		padding-top: 100px;
+		padding-right: 100px;
+	}
+	.header__nav-container.active {
+		display: block;
+	}
+	.header__list {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 375px) {
+	.header__button {
+		padding: 10px 10px;
+	}
+}
