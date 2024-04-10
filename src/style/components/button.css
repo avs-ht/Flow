@@ -3,12 +3,17 @@
 	border: 2px solid var(--primary-color);
 	border-radius: var(--button-border-radius);
 	padding: 16px 24px;
-	font-weight: 500;
+	font-weight: 500 !important;
 	white-space: nowrap;
 	z-index: 1;
 	transition: var(--transition);
+	cursor: pointer !important;
 }
-
+.button:hover {
+	background-color: var(--dark-green);
+	color: var(--secondary-color);
+	border-color: var(--dark-green);
+}
 .button--white-c {
 	color: var(--secondary-color);
 	border-color: var(--secondary-color);

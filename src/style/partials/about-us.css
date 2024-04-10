@@ -1,0 +1,55 @@
+.about-us {
+	padding: 16px;
+}
+.about-us__content {
+	background-color: var(--beige);
+	border-radius: 24px;
+	width: 100%;
+	padding: 64px clamp(36px, 6.6vw, 96px) var(--section-padding);
+	color: var(--primary-color);
+}
+.about-us__title {
+	--circle-color: var(--dark-green);
+	--text-color: var(--primary-color);
+}
+
+.about-us__text {
+	display: grid;
+	grid-template-columns: 9fr 11fr;
+}
+
+.about-us__subtitle {
+	font-size: var(--headline300);
+	margin-bottom: 24px;
+}
+.about-us__desc {
+	font-size: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
+	line-height: 1.2;
+	color: var(--contrast-color);
+	max-width: 600px;
+}
+.about-us__achievements {
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.achievement-about-us__title {
+	font-size: clamp(1.5rem, 2.143vw + 1.071rem, 3rem);
+	margin-bottom: 8px;
+}
+.achievement-about-us__text {
+	font-size: var(--body-fs);
+	color: var(--contrast-color);
+}
+
+@media (max-width: 919px) {
+	.about-us__text {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.about-us__achievements {
+		justify-self: flex-start;
+	}
+}

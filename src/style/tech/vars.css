@@ -27,4 +27,11 @@
 	--border-radius: 16px;
 	--button-border-radius: 25px;
 	--transition: 0.3s;
+
+	--headline300: clamp(1.625rem, 2.25vw + 1.175rem, 3.875rem);
+	--title300: clamp(1rem, 0.714vw + 0.857rem, 1.5rem);
+	--title400: clamp(0.875rem, 0.536vw + 0.768rem, 1.25rem);
+	--body100: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
+
+	--section-padding: clamp(64px, 7.2vw, 104px);
 }
