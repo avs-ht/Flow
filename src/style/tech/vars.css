@@ -34,6 +34,7 @@
 	--title400: clamp(0.875rem, 0.536vw + 0.768rem, 1.25rem);
 	--body200: clamp(0.75rem, 0.357vw + 0.679rem, 1rem);
 	--body100: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
+	--label300: clamp(0.75rem, 0.179vw + 0.714rem, 0.875rem);
 	--label100: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
 
 	--section-padding: clamp(64px, 7.2vw, 104px);
