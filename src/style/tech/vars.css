@@ -29,9 +29,12 @@
 	--transition: 0.3s;
 
 	--headline300: clamp(1.625rem, 2.25vw + 1.175rem, 3.875rem);
+	--headline200: clamp(2.875rem, 2.679vw + 2.339rem, 4.75rem);
 	--title300: clamp(1rem, 0.714vw + 0.857rem, 1.5rem);
 	--title400: clamp(0.875rem, 0.536vw + 0.768rem, 1.25rem);
+	--body200: clamp(0.75rem, 0.357vw + 0.679rem, 1rem);
 	--body100: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
+	--label100: clamp(0.875rem, 0.357vw + 0.804rem, 1.125rem);
 
 	--section-padding: clamp(64px, 7.2vw, 104px);
 }

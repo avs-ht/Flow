@@ -1,0 +1,16 @@
+.commitment {
+	padding-block: clamp(40px, 11vw, 140px);
+}
+.commitment__container {
+	display: flex;
+	flex-direction: column;
+}
+.commitment__title {
+	font-size: var(--headline200);
+	margin-bottom: clamp(24px, 5vw, 64px);
+	text-align: center;
+	color: var(--primary-color);
+}
+.commitment__button {
+	margin: 0 auto;
+}
