@@ -28,7 +28,8 @@
 	border: none;
 }
 .button--light-green-bg:hover {
-	background-color: #fff;
+	color: var(--dark-green);
+	background-color: var(--secondary-color);
 }
 .button--dark-green-bg {
 	background-color: var(--dark-green);
